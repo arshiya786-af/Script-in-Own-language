@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html>
+        <body>
+        <label>Enter A Number</label>
+        <input type="text" id="n1">
+        <label>Enter A Second Number</label>
+        <input type="text" id="n2">
+        <input type="button" value="Addition" onclick=""> I
+        =<script>
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h1>Custom Array</h1>
+    
+</body>
+</html>
+<script>
+    function myArray(){
+        Object.defineProperty(this,"length",{
+            value:0,
+            writable:true,
+            enumerable:false
+        })
+    this.length=arguments.length;
+    for(let i=0;i<this.length;i++)
+    {
+        this[i]=arguments[i];
+
+    }}
+    let a2=new myArray("x","y","z");
+    myArray.prototype.اضافہکرنا=function(value)
+    {
+        let index=this.length;
+        this[index]=value;
+        this.length++;
+    };
+    myArray.prototype.ہٹانا = function(){
+    let index=this.length-1;
+    delete this[index];
+    this.length--;
+    };
+
+    myArray.prototype.عکس=function(value){
+        var bag=""
+        for(var j=value.length-1;j>=0;j--)
+        {
+            bag=bag+value[j]
+        }
+        console.log("reverse:",bag)
+
+    }
+    myArray.prototype.چھپائی=function(value)
+    {var bag=[]
+        for(var j=0;j<value.length;j++)
+        {
+            // bag=bag+value[j]+","
+            bag.push(value[j])
+        }
+        console.log("Print",bag)
+    }
+    myArray.prototype .اوپر=function(value){
+        for(var j=0;j<value.length-1;j++)
+        {
+           
+        }
+        console.log("Top:",value[j])
+
+    }
+myArray.prototype.ناپ=function(value){
+    for(var j=0;j<value.length-1;j++)
+        {
+           
+        }
+        console.log("size:",j)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let a3=["1","2","3","4"]
+ 
+
+    
+   
+    a2.اضافہکرنا("M")//push
+    a2.اضافہکرنا("A")//push
+    console.log("a2:",Object.values(a2))
+     a2.ہٹانا()//pop
+    console.log("a2:",Object.values(a2))
+    a2.عکس("Thank_U")//reverse
+    a2.اوپر(a2)//top
+    a2.چھپائی(a3)//print
+    a2.ناپ(a3)//size
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+   </script>
